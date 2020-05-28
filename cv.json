@@ -1,0 +1,54 @@
+{
+  "additional_info": "For additional info, in a more human readable way, check out the CV appended to the application!",
+  "name": "Adi",
+  "surname": "Čaušević",
+  "birth": {
+    "place": {
+      "country": "Germany",
+      "city": "Frankfurt am Main"
+    },
+    "date": "1998-04-11T20:38"
+  },
+  "address": {
+    "country": "Croatia",
+    "city": "Zagreb",
+    "address": "Ulica Charlesa Darwina 14"
+  },
+  "residence": {
+    "country": "Croatia",
+    "city": "Opatija",
+    "address": "Ulica m.Tita 32"
+  },
+  "phone": "+385 97 659 4622",
+  "email": "adi.causevic7@gmail.com",
+  "education": [
+    {
+      "type": "BSc in Computing",
+      "institution": {
+        "country": "Croatia",
+        "university": "University of Zagreb",
+        "faculty": "Faculty of Engeineering and Computing"
+      },
+      "time": "2016-2019"
+    },
+    {
+      "type": "Master in Computing",
+      "institution": {
+        "country": "Croatia",
+        "university": "University of Zagreb",
+        "faculty": "Faculty of Engeineering and Computing"
+      },
+      "time": "2016-present"
+    }
+  ],
+  "skills":{
+    "languages": ["Croatian", "English", "German", "Italian"],
+    "prog_lang": {
+      "intermed": ["C++", "Java", "Python"],
+      "basic": ["Julia", "C", "Haskell", "Bash", "C#", "JavaScript", "SQL"]
+    },
+    "libraries": ["OpenGL", "OpenCV", "Cuda", "Torch", "Qt"],
+    "version_control": ["git"],
+    "dev_tools": ["Visual Studio", "IntelliJ", "Clion", "Pycharm"]
+  }
+}

@@ -1,0 +1,147 @@
+\documentclass[a4paper]{article}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage[utf8]{inputenc}
+\pagestyle{empty} 
+
+
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{10pt}
+\newlength{\tablewidth}
+
+\setlist[itemize]{topsep=0em, itemsep=0.0em}
+\setlist[itemize,1]{before=\vspace{-1em}}
+
+\titleformat{\section}{\uppercase}{}{0pt}{}[{\vspace{0.5em}\titlerule}]
+\titleformat{\subsection}{\bf}{}{0pt}{}{}
+\titlespacing{\section}{0pt}{1em}{0.5em}
+\titlespacing{\subsection}{0pt}{0pt}{0.1em}
+
+
+\usepackage[
+	top=0.79in,
+	bottom=0.79in,
+	left=0.79in,
+	right=0.79in,
+]{geometry}
+
+\newenvironment{basic-info}{%
+	\setlength{\tablewidth}{\linewidth}
+	\addtolength{\tablewidth}{-2\tabcolsep}
+	\begin{tabular}{@{}p{0.15\tablewidth}p{0.85\tablewidth}@{}}
+	}{%
+	\end{tabular}
+}
+
+\newenvironment{period}[2]{%
+	\setlength{\tablewidth}{\linewidth}
+	\addtolength{\tablewidth}{-2\tabcolsep}
+	\begin{tabular}{@{}p{0.75\tablewidth}>{\raggedleft\arraybackslash}p{0.25\tablewidth}@{}}%
+		#1 & #2
+	\end{tabular}
+	\begin{itemize}
+	}{
+	\end{itemize}
+}
+
+\newenvironment{period-empty}[2]{%
+	\setlength{\tablewidth}{\linewidth}
+	\addtolength{\tablewidth}{-2\tabcolsep}
+	\begin{tabular}{@{}p{0.75\tablewidth}>{\raggedleft\arraybackslash}p{0.25\tablewidth}@{}}%
+		#1 & #2
+	\end{tabular}
+}
+
+\newenvironment{skills}{
+	\setlength{\tablewidth}{\linewidth}
+	\addtolength{\tablewidth}{-2\tabcolsep}
+	\begin{tabular}{@{}p{0.25\tablewidth}p{0.75\tablewidth}@{}}
+	}{
+	\end{tabular}
+}
+
+\newenvironment{projects}{
+	\setlength{\tablewidth}{\linewidth}
+	\addtolength{\tablewidth}{-2\tabcolsep}
+	\begin{tabular}{@{}p{0.9\tablewidth}>{\raggedleft\arraybackslash}p{0.1\tablewidth}@{}}%
+	}{
+	\end{tabular}
+}
+
+\begin{document}
+	
+	\fontfamily{\sfdefault}
+	\selectfont
+	
+	\LARGE{Adi \v{C}au\v{s}evi\'{c}}\\
+	\normalsize
+	
+	\section{Personal information}
+	\begin{basic-info}
+		Birth & April 11th, 1998., Frankfurt am Main, Germany \\
+		Address & Ulica Charlesa Darwina 14, 10000 Zagreb \\
+		Residence & Ulica m. Tita 32, 51410 Opatija\\
+		Phone & +385 97 659 4622 \\
+		Email  & adi.causevic7@gmail.com
+	\end{basic-info}
+	
+	\vspace{3mm}
+	
+	\section{Education}
+	%University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia
+	\subsection{BSc in Computing}
+	\vspace{2mm}
+		\begin{period-empty}{University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia}{2016 -- 2019}
+		\end{period-empty}
+	
+	\subsection{Master in Computing}
+	\vspace{2mm}
+		\begin{period-empty}{AGH University of Science and Technology, Krakow, Poland (ERASMUS+)}{Winter semester 2019/20}
+		\end{period-empty}	
+		\vspace{-3mm}
+		\begin{period-empty}{University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia}{2019 -- present}
+		\end{period-empty}	
+
+	
+	\vspace{2mm}	
+	\section{Work experience}
+	\subsection{Student Intern}
+	\begin{period-empty}{IN2 d.o.o, Zagreb, Croatia}{December 2016 -- July 2017}
+	\end{period-empty}
+	
+	\vspace{3mm}
+	
+	\section{Skills}
+	\begin{skills}
+		Languages & 
+		\begin{itemize}
+			\item Croatian (native)
+			\item English (fluent)
+			\item German (fluent)
+			\item Italian (basic)
+		\end{itemize} \\
+		
+		Programming languages & 
+		\begin{itemize}
+			\item \textbf{C++, Java, Python} -- intermediate
+			\item \textbf{Julia, C, Haskell, Bash, C\#, JavaScript, SQL} -- basic
+		\end{itemize} \\
+
+		Libraries &
+		\begin{itemize}
+			\item OpenGL, Cuda, OpenCV, Torch, Tensorflow
+		\end{itemize} \\
+
+		
+		Version control & 
+		\begin{itemize}
+			\item \textbf{git} -- intermediate
+		\end{itemize} \\
+		
+		Development tools &
+		\begin{itemize}
+			\item Visual Studio, IntelliJ, Clion, PyCharm
+		\end{itemize} \\
+	\end{skills}
+\end{document}
