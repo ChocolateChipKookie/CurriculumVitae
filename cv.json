@@ -1,5 +1,5 @@
 {
-  "additional_info": "For additional info, in a more human readable way, check out the CV appended to the application!",
+  "additional_info": "For additional info, in a more human readable way, check out the CV appended to the application, or at https://github.com/ChocolateChipKookie/CurriculumVitae!",
   "name": "Adi",
   "surname": "Čaušević",
   "birth": {
@@ -24,21 +24,34 @@
   "education": [
     {
       "type": "BSc in Computing",
-      "institution": {
-        "country": "Croatia",
-        "university": "University of Zagreb",
-        "faculty": "Faculty of Engeineering and Computing"
-      },
-      "time": "2016-2019"
+      "institutions": [
+        {
+          "country": "Croatia",
+          "university": "University of Zagreb",
+          "faculty": "Faculty of Electrical Engeineering and Computing",
+          "info": "ordinary studies",
+          "time": "2016-2019"
+        }
+      ]
     },
     {
       "type": "Master in Computing",
-      "institution": {
-        "country": "Croatia",
-        "university": "University of Zagreb",
-        "faculty": "Faculty of Engeineering and Computing"
-      },
-      "time": "2016-present"
+      "institutions": [
+        {
+          "country": "Poland",
+          "university": "AGH University of Science and Technology",
+          "faculty": "Faculty of Computer Science",
+          "info": "Erasmus+ exchange program",
+          "time": "Winter semester of 2019/2020"
+        },
+        {
+          "country": "Croatia",
+          "university": "University of Zagreb",
+          "faculty": "Faculty of Electrical Engeineering and Computing",
+          "info": "ordinary studies",
+          "time": "Winter semester of 2019/2020"
+        }
+      ]
     }
   ],
   "skills":{
